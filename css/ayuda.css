@@ -3,7 +3,9 @@
     max-width: var(--max-width);
     margin: 0 auto;
   }
-
+  section{
+    margin-bottom: 50px;
+  }
   
 .vh-100{
     height: calc(100vh var(--nav-height));

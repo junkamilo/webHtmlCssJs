@@ -3,6 +3,7 @@ header{
     color: var(--second-color);
     position: sticky;
     top: 0;
+    width: 100%;
   }
   .nav{
 
@@ -10,12 +11,16 @@ header{
   .nav__contenedor{
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    height: var(--nav-height);
     justify-content: space-between;
     --transform-menu-show:translate(-100%);
+    --icon-togle-menu: url(../assets/icons/open.svg);
+    width: 98%;
   }
 .nav__contenedor:has(.nav__imput:checked){
   --transform-menu-show:translate(0);
-  --icon-togle-menu: url(/assets/icons/close.svg);
+  --icon-togle-menu: url(../assets/icons/close.svg);
 }
   .nav{
     height: var(--nav-height);
@@ -26,7 +31,8 @@ header{
 
   }
   .nav__logo{
-
+    display: flex;
+    align-items: center;
   }
   .nav__toggle{
     height: 60px;

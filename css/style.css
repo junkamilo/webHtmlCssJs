@@ -1,6 +1,6 @@
 @import url(variables.css);
 @import url(config.css);
-@import url(ayudas.css);
+@import url(ayuda.css);
 @import url(header.css);
 @import url(inicio.css);
 @import url(nosotros.css);
@@ -32,73 +32,10 @@
     flex-basis: 45%;
   } 
   
-  .titulo{
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
   
-  .copy{
-    margin: 20px 0;
-    font-weight: 300;
-    font-size: 1.2rem;
-  }
-  
-  .cta{
-    display: inline-block;
-    background-color: var(--main-color);
-    color: var(--second-color);
-    text-decoration: none;
-    font-weight: 700;
-    padding: 16px 30px;
-    border-radius: 30px;
-  }
   .cta--negro{
     background-color: var(--second-color);
     color: var(--white-color);
   }
 
 
-/*formulario*/
-.form{
-  margin-bottom: 30px;
-}
-.Contacto{
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.form-group{
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  margin: 0 auto;
-  text-align: center;
-}
-.input{
-  height: 30px;
-}
-button{
-  margin: 30px auto;
-}
-textarea{
-  resize: none;
-}
-/*media qries*/
-@media(max-width:320px){
-  .principal, .nosotros{
-    flex-direction: column;
-  }
-  .principal>img, .nosotros>img{
-    order: 1;
-  }
-  .contenedor-textos{
-    order: 2;
-  }
-  .header{
-    width: 100%;
-    margin: 0 auto;
-  }
-}
